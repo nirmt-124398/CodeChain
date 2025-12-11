@@ -1,0 +1,45 @@
+﻿[dotenv@17.2.3] injecting env (1) from .env -- tip: ≡ƒôí add observability to secrets: https://dotenvx.com/ops
+≡ƒöº Gemini Client Initialized
+   Model: gemini-2.5-flash
+   API Key: AIzaSyByGE...
+================================================================================
+
+================================================================================
+≡ƒº¬ TESTING DESCRIPTION FORMATTING
+================================================================================
+
+≡ƒô¥ Test Product:
+   Name: Trimmer for Men | Waterproof, Compact & Noiseless Electric Beard & Body Groomer
+   Features: Waterproof design, Compact and portable, Noiseless operation, Precision trimming, Long battery life
+   Platform: Amazon
+
+--------------------------------------------------------------------------------
+
+≡ƒÜÇ Generating description...
+
+≡ƒöä Starting API request with retry logic (max 3 attempts)...
+
+≡ƒôí Attempt 1/3...
+Γ£à Attempt 1 succeeded!
+Γ£à GENERATED DESCRIPTION:
+================================================================================
+Discover the ultimate grooming tool with our Trimmer for Men, an advanced Electric Beard & Body Groomer designed for modern lifestyles. Experience effortless precision and unmatched convenience with this waterproof, compact, and noiseless electric trimmer, perfect for all your personal grooming needs.
+
+Engineered with a fully waterproof design, this versatile groomer allows for comfortable wet or dry trimming. Use it confidently in the shower for a quick touch-up or for easy cleanup under running water, ensuring hygienic maintenance every time. Say goodbye to messy cleanups and hello to ultimate convenience.
+
+Its sleek, compact design makes this trimmer incredibly portable, fitting effortlessly into your travel bag or gym kit. Whether you are at home or on the go, maintain your desired look with ease. Complementing its portability is a powerful, long-lasting battery, providing extended cordless use on a single charge, so you are always ready for your next grooming session.
+
+Enjoy a remarkably quiet grooming experience thanks to its noiseless operation. No more irritating buzz; just smooth, efficient trimming that respects your peace and quiet. Equipped with ultra-sharp blades, this precision trimmer delivers exact lines and even cuts for your beard, mustache, and body hair, ensuring a consistently refined finish without pulling or tugging.
+
+Elevate your daily routine with the Trimmer for Men | Waterproof, Compact & Noiseless Electric Beard & Body Groomer. It is the ideal choice for any man seeking a reliable, high-performance grooming solution that combines convenience, precision, and comfort. Achieve your perfect look with ease and confidence, anywhere, anytime.
+================================================================================
+
+≡ƒôè FORMATTING CHECK:
+--------------------------------------------------------------------------------
+Contains ** (bold): Γ£à NO (GOOD)
+Contains ## (headers): Γ£à NO (GOOD)
+Length: 1691 characters
+
+Γ£à SUCCESS: Description is clean and properly formatted!
+
+================================================================================

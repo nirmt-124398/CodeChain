@@ -1,0 +1,66 @@
+﻿[dotenv@17.2.3] injecting env (1) from .env -- tip: ≡ƒ¢á∩╕Å  run anywhere with `dotenvx run -- yourcommand`
+≡ƒöº Gemini Client Initialized
+   Model: gemini-2.5-flash
+   API Key: AIzaSyByGE...
+================================================================================
+
+================================================================================
+≡ƒÄ¿ TESTING IMAGE GENERATION CAPABILITY
+================================================================================
+
+≡ƒô¥ Test Prompt:
+Generate a simple banner image for a retail product: "Summer Sale - 50% Off"
+    
+Make it colorful and eye-catching with a modern design.
+
+--------------------------------------------------------------------------------
+
+≡ƒÜÇ Generating...
+
+≡ƒöä Starting API request with retry logic (max 3 attempts)...
+
+≡ƒôí Attempt 1/3...
+Γ£à Attempt 1 succeeded!
+Γ£à Response received!
+
+≡ƒôª RESPONSE STRUCTURE:
+--------------------------------------------------------------------------------
+Response object keys: [
+  'candidates',
+  'usageMetadata',
+  'modelVersion',
+  'responseId',
+  'text',
+  'functionCall',
+  'functionCalls'
+]
+
+Candidates found: 1
+
+Candidate 1:
+  Content: Present
+  Parts: 2
+
+  Part 1:
+    Keys: [ 'text' ]
+    Type: TEXT
+    Text preview: Here's your colorful and eye-catching banner image for "Summer Sale - 50% Off"! 
+
+  Part 2:
+    Keys: [ 'inlineData' ]
+    Type: INLINE_DATA (IMAGE!)
+    MIME type: image/png
+    Data length: 1608560
+
+≡ƒô¥ TEXT RESPONSE:
+--------------------------------------------------------------------------------
+Here's your colorful and eye-catching banner image for "Summer Sale - 50% Off"! 
+
+
+================================================================================
+≡ƒôè CONCLUSION
+================================================================================
+Γ£à Model DOES generate images!
+   The banner generation should work.
+
+================================================================================

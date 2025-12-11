@@ -1,0 +1,16 @@
+{
+  "platforms": {
+    "amazon": {
+      "banner_size": "3000x1000",
+      "max_description_chars": 2000
+    },
+    "flipkart": {
+      "banner_size": "2000x500",
+      "max_description_chars": 1500
+    },
+    "meta": {
+      "banner_size": "1080x1080",
+      "max_description_chars": 500
+    }
+  }
+}

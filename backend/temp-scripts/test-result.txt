@@ -1,0 +1,41 @@
+﻿[dotenv@17.2.3] injecting env (1) from .env -- tip: ΓÜÖ∩╕Å  suppress all logs with { quiet: true }
+≡ƒöº Gemini Client Initialized
+   Model: gemini-2.5-flash
+   API Key: AIzaSyByGE...
+================================================================================
+
+================================================================================
+≡ƒº¬ TESTING GEMINI API WITH UPDATED MODEL
+================================================================================
+
+≡ƒô¥ Test 1: Simple text generation
+--------------------------------------------------------------------------------
+Prompt: "Say 'Hello from Gemini 2.5 Flash!' in a creative way."
+≡ƒöä Starting API request with retry logic (max 3 attempts)...
+
+≡ƒôí Attempt 1/3...
+Γ£à Attempt 1 succeeded!
+
+Γ£à SUCCESS!
+Response: Here are a few creative ways to say "Hello from Gemini 2.5 Flash!":
+
+1.  **The Energetic Spark:**
+    "Γ£¿ *Flash!* Did you catch that? A lightning-fast 'Hello!' zips your way from Gemini 2.5 Flash!"
+
+2.  **The Quick Debut:**
+    "Making a quick entrance! 'Hello!' from the newly optimized, super-speedy Gemini 2.5 Flash!"
+
+3.  **The Playful Blip:**
+    "Boop! (That's my speedy 'Hello'.) Greetings from Gemini 2.5 Flash!"
+
+4.  **The "In a Flash" Approach:**
+    "In a flash, I'm here to say hello! Gemini 2.5 Flash, at your service."
+
+5.  **The Tech-Optimized:**
+    "Protocol initiated: GREETING. Transmitting: 'Hello!' from Gemini 2.5 Flash, optimized for speed."
+
+Choose the one that best fits the vibe you're going for!
+
+================================================================================
+≡ƒÄë API is working correctly with gemini-2.5-flash!
+================================================================================

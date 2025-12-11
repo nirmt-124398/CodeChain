@@ -1,0 +1,83 @@
+﻿[dotenv@17.2.3] injecting env (1) from .env -- tip: ≡ƒùé∩╕Å backup and recover secrets: https://dotenvx.com/ops
+================================================================================
+≡ƒÄ¿ IMAGE GENERATION MODEL TEST
+================================================================================
+
+≡ƒÜÇ Testing Multimodal Image Models...
+
+
+≡ƒô¥ Testing: gemini-2.5-flash-image
+   Type: multimodal
+   Description: Gemini multimodal with image generation
+--------------------------------------------------------------------------------
+   Prompt: "Generate a simple description of a retail banner for a summer sale."
+   Γ£à SUCCESS!
+   Response: Sure, here is a simple description for a retail banner for a summer sale:
+
+"Summer Sale - Up to 50% Off!"...
+
+≡ƒô¥ Testing: gemini-2.0-flash-exp-image-generation
+   Type: multimodal
+   Description: Gemini 2.0 experimental image generation
+--------------------------------------------------------------------------------
+   Prompt: "Generate a simple description of a retail banner for a summer sale."
+   Γ£à SUCCESS!
+   Response: **Option 1 (Short & Sweet):**
+
+SUMMER SALE! Hot deals on cool gear! Shop now and save!
+
+**Option 2 (Slightly More Detail):**
+
+Summer Savings are HERE! Get up to 50% off sitewide. Don't miss out on our...
+
+≡ƒô¥ Testing: gemini-3-pro-image-preview
+   Type: multimodal
+   Description: Gemini 3 Pro with image generation (preview)
+--------------------------------------------------------------------------------
+   Prompt: "Generate a simple description of a retail banner for a summer sale."
+   Γ£à SUCCESS!
+   Response: Here is a simple description of a retail banner for a summer sale:
+
+A wide, horizontal banner with a bright, sunny yellow background. In the center, large, bold white text reads "SUMMER SALE." Below t...
+
+
+≡ƒÜÇ Testing Imagen Model...
+
+
+≡ƒô¥ Testing: imagen-4.0-fast-generate-001
+   Type: Dedicated Image Generation
+   Description: Imagen 4 Fast - Dedicated image generation model
+--------------------------------------------------------------------------------
+   Γä╣∩╕Å  Imagen models use the 'predict' method, not 'generateContent'
+   Γä╣∩╕Å  They may require different SDK methods or direct API calls
+   Γä╣∩╕Å  Checking if model exists in API...
+   Γ£à Model exists!
+   Display Name: Imagen 4 Fast
+   Supported Methods: predict
+
+   ΓÜá∩╕Å  Note: Imagen models require special implementation
+   See: https://ai.google.dev/api/generate-images
+
+
+================================================================================
+≡ƒôè SUMMARY
+================================================================================
+
+Γ£à Working Models (3):
+   - gemini-2.5-flash-image
+   - gemini-2.0-flash-exp-image-generation
+   - gemini-3-pro-image-preview
+
+Γ¥î Failed Models (0):
+
+
+================================================================================
+≡ƒÆí RECOMMENDATION FOR IMAGE GENERATION
+================================================================================
+
+For retail creative generation, use:
+   const imageModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash-image" });
+
+This model supports generateContent() and can handle image-related tasks.
+
+================================================================================

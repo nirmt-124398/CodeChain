@@ -1,0 +1,243 @@
+﻿[dotenv@17.2.3] injecting env (1) from .env -- tip: ΓÜÖ∩╕Å  load multiple .env files with { path: ['.env.local', '.env'] }
+API Key: AIzaSyByGE...
+
+Fetching available models...
+
+Γ£à Available Models:
+
+1. models/embedding-gecko-001
+   Display Name: Embedding Gecko
+   Methods: embedText, countTextTokens
+
+2. models/gemini-2.5-flash
+   Display Name: Gemini 2.5 Flash
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+3. models/gemini-2.5-pro
+   Display Name: Gemini 2.5 Pro
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+4. models/gemini-2.0-flash-exp
+   Display Name: Gemini 2.0 Flash Experimental
+   Methods: generateContent, countTokens, bidiGenerateContent
+
+5. models/gemini-2.0-flash
+   Display Name: Gemini 2.0 Flash
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+6. models/gemini-2.0-flash-001
+   Display Name: Gemini 2.0 Flash 001
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+7. models/gemini-2.0-flash-exp-image-generation
+   Display Name: Gemini 2.0 Flash (Image Generation) Experimental
+   Methods: generateContent, countTokens, bidiGenerateContent
+
+8. models/gemini-2.0-flash-lite-001
+   Display Name: Gemini 2.0 Flash-Lite 001
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+9. models/gemini-2.0-flash-lite
+   Display Name: Gemini 2.0 Flash-Lite
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+10. models/gemini-2.0-flash-lite-preview-02-05
+   Display Name: Gemini 2.0 Flash-Lite Preview 02-05
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+11. models/gemini-2.0-flash-lite-preview
+   Display Name: Gemini 2.0 Flash-Lite Preview
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+12. models/gemini-exp-1206
+   Display Name: Gemini Experimental 1206
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+13. models/gemini-2.5-flash-preview-tts
+   Display Name: Gemini 2.5 Flash Preview TTS
+   Methods: countTokens, generateContent
+
+14. models/gemini-2.5-pro-preview-tts
+   Display Name: Gemini 2.5 Pro Preview TTS
+   Methods: countTokens, generateContent
+
+15. models/gemma-3-1b-it
+   Display Name: Gemma 3 1B
+   Methods: generateContent, countTokens
+
+16. models/gemma-3-4b-it
+   Display Name: Gemma 3 4B
+   Methods: generateContent, countTokens
+
+17. models/gemma-3-12b-it
+   Display Name: Gemma 3 12B
+   Methods: generateContent, countTokens
+
+18. models/gemma-3-27b-it
+   Display Name: Gemma 3 27B
+   Methods: generateContent, countTokens
+
+19. models/gemma-3n-e4b-it
+   Display Name: Gemma 3n E4B
+   Methods: generateContent, countTokens
+
+20. models/gemma-3n-e2b-it
+   Display Name: Gemma 3n E2B
+   Methods: generateContent, countTokens
+
+21. models/gemini-flash-latest
+   Display Name: Gemini Flash Latest
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+22. models/gemini-flash-lite-latest
+   Display Name: Gemini Flash-Lite Latest
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+23. models/gemini-pro-latest
+   Display Name: Gemini Pro Latest
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+24. models/gemini-2.5-flash-lite
+   Display Name: Gemini 2.5 Flash-Lite
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+25. models/gemini-2.5-flash-image-preview
+   Display Name: Nano Banana
+   Methods: generateContent, countTokens, batchGenerateContent
+
+26. models/gemini-2.5-flash-image
+   Display Name: Nano Banana
+   Methods: generateContent, countTokens, batchGenerateContent
+
+27. models/gemini-2.5-flash-preview-09-2025
+   Display Name: Gemini 2.5 Flash Preview Sep 2025
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+28. models/gemini-2.5-flash-lite-preview-09-2025
+   Display Name: Gemini 2.5 Flash-Lite Preview Sep 2025
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+29. models/gemini-3-pro-preview
+   Display Name: Gemini 3 Pro Preview
+   Methods: generateContent, countTokens, createCachedContent, batchGenerateContent
+
+30. models/gemini-3-pro-image-preview
+   Display Name: Nano Banana Pro
+   Methods: generateContent, countTokens, batchGenerateContent
+
+31. models/nano-banana-pro-preview
+   Display Name: Nano Banana Pro
+   Methods: generateContent, countTokens, batchGenerateContent
+
+32. models/gemini-robotics-er-1.5-preview
+   Display Name: Gemini Robotics-ER 1.5 Preview
+   Methods: generateContent, countTokens
+
+33. models/gemini-2.5-computer-use-preview-10-2025
+   Display Name: Gemini 2.5 Computer Use Preview 10-2025
+   Methods: generateContent, countTokens
+
+34. models/embedding-001
+   Display Name: Embedding 001
+   Methods: embedContent
+
+35. models/text-embedding-004
+   Display Name: Text Embedding 004
+   Methods: embedContent
+
+36. models/gemini-embedding-exp-03-07
+   Display Name: Gemini Embedding Experimental 03-07
+   Methods: embedContent, countTextTokens, countTokens
+
+37. models/gemini-embedding-exp
+   Display Name: Gemini Embedding Experimental
+   Methods: embedContent, countTextTokens, countTokens
+
+38. models/gemini-embedding-001
+   Display Name: Gemini Embedding 001
+   Methods: embedContent, countTextTokens, countTokens, asyncBatchEmbedContent
+
+39. models/aqa
+   Display Name: Model that performs Attributed Question Answering.
+   Methods: generateAnswer
+
+40. models/imagen-4.0-generate-preview-06-06
+   Display Name: Imagen 4 (Preview)
+   Methods: predict
+
+41. models/imagen-4.0-ultra-generate-preview-06-06
+   Display Name: Imagen 4 Ultra (Preview)
+   Methods: predict
+
+42. models/imagen-4.0-generate-001
+   Display Name: Imagen 4
+   Methods: predict
+
+43. models/imagen-4.0-ultra-generate-001
+   Display Name: Imagen 4 Ultra
+   Methods: predict
+
+44. models/imagen-4.0-fast-generate-001
+   Display Name: Imagen 4 Fast
+   Methods: predict
+
+45. models/veo-2.0-generate-001
+   Display Name: Veo 2
+   Methods: predictLongRunning
+
+46. models/veo-3.0-generate-001
+   Display Name: Veo 3
+   Methods: predictLongRunning
+
+47. models/veo-3.0-fast-generate-001
+   Display Name: Veo 3 fast
+   Methods: predictLongRunning
+
+48. models/veo-3.1-generate-preview
+   Display Name: Veo 3.1
+   Methods: predictLongRunning
+
+49. models/veo-3.1-fast-generate-preview
+   Display Name: Veo 3.1 fast
+   Methods: predictLongRunning
+
+50. models/gemini-2.5-flash-native-audio-latest
+   Display Name: Gemini 2.5 Flash Native Audio Latest
+   Methods: countTokens, bidiGenerateContent
+
+
+≡ƒô¥ Models supporting generateContent:
+   - models/gemini-2.5-flash
+   - models/gemini-2.5-pro
+   - models/gemini-2.0-flash-exp
+   - models/gemini-2.0-flash
+   - models/gemini-2.0-flash-001
+   - models/gemini-2.0-flash-exp-image-generation
+   - models/gemini-2.0-flash-lite-001
+   - models/gemini-2.0-flash-lite
+   - models/gemini-2.0-flash-lite-preview-02-05
+   - models/gemini-2.0-flash-lite-preview
+   - models/gemini-exp-1206
+   - models/gemini-2.5-flash-preview-tts
+   - models/gemini-2.5-pro-preview-tts
+   - models/gemma-3-1b-it
+   - models/gemma-3-4b-it
+   - models/gemma-3-12b-it
+   - models/gemma-3-27b-it
+   - models/gemma-3n-e4b-it
+   - models/gemma-3n-e2b-it
+   - models/gemini-flash-latest
+   - models/gemini-flash-lite-latest
+   - models/gemini-pro-latest
+   - models/gemini-2.5-flash-lite
+   - models/gemini-2.5-flash-image-preview
+   - models/gemini-2.5-flash-image
+   - models/gemini-2.5-flash-preview-09-2025
+   - models/gemini-2.5-flash-lite-preview-09-2025
+   - models/gemini-3-pro-preview
+   - models/gemini-3-pro-image-preview
+   - models/nano-banana-pro-preview
+   - models/gemini-robotics-er-1.5-preview
+   - models/gemini-2.5-computer-use-preview-10-2025
+
+≡ƒÆí RECOMMENDED: Use "gemini-2.5-flash" in geminiClient.js
