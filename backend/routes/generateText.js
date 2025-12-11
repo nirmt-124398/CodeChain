@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { textModel, generateContentWithRetry } = require('../utils/geminiClient');
+const mcpClient = require('../utils/mcpClient');
 const fs = require('fs');
 const path = require('path');
+
 
 router.post('/', async (req, res) => {
     try {
@@ -22,12 +24,25 @@ router.post('/', async (req, res) => {
         console.log('Timestamp:', new Date().toISOString());
         console.log('-'.repeat(80));
 
+        // Fetch platform guidelines using MCP (optional enhancement)
+        let mcpContext = '';
+        try {
+            console.log('🔍 MCP: Attempting to fetch platform guidelines...');
+            const guidelines = await mcpClient.fetchPlatformGuidelines(platform);
+            if (guidelines) {
+                mcpContext = `\n\nPlatform Guidelines Context (from ${platform}):\n${guidelines.substring(0, 1000)}...\n`;
+                console.log('✅ MCP: Successfully fetched platform context');
+            }
+        } catch (error) {
+            console.log('⚠️  MCP: Could not fetch guidelines, continuing without MCP context');
+        }
+
         const prompt = `Generate a SEO-optimized product description for a product named "${name}" with the following features: ${features.join(', ')}. 
 
 Product Details from User:
 ${productDescription}
 
-The description should be optimized for ${platform}.
+The description should be optimized for ${platform}.${mcpContext}
 
 Use the user's product details as the foundation and enhance them with SEO-optimized language. Keep the core information accurate and don't hallucinate or make up features not mentioned.
 
@@ -40,6 +55,7 @@ IMPORTANT FORMATTING RULES:
 - The output should be ready to paste directly into an e-commerce platform
 
 Return ONLY the description text, properly formatted with natural line breaks.`;
+
 
         console.log('🚀 Attempting API call to Gemini...');
         console.log('Model: gemini-1.5-flash');

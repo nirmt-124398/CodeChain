@@ -43,6 +43,14 @@ export default function AppHeader() {
                     }}>
                         Create
                     </a>
+                    <a href="/history" style={{
+                        color: 'white',
+                        textDecoration: 'none',
+                        fontWeight: '500',
+                        transition: 'opacity 0.2s'
+                    }}>
+                        History
+                    </a>
                 </nav>
             </div>
         </header>

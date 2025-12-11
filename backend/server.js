@@ -17,6 +17,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/generate/text', require('./routes/generateText'));
 app.use('/generate/banner', require('./routes/generateBanner'));
 app.use('/validate/specs', require('./routes/validateSpecs'));
+app.use('/history', require('./routes/history'));
 
 app.get('/', (req, res) => {
   res.send('CodeChain Backend is running');

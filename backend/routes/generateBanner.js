@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { genAI, generateContentWithRetry } = require('../utils/geminiClient');
+const mcpClient = require('../utils/mcpClient');
 const fs = require('fs');
 const path = require('path');
+
 
 router.post('/', async (req, res) => {
     try {
@@ -26,6 +28,19 @@ router.post('/', async (req, res) => {
         // Use the image generation model
         const imageModel = genAI.getGenerativeModel({ model: "gemini-2.5-flash-image" });
 
+        // Fetch design guidelines using MCP (optional enhancement)
+        let mcpDesignContext = '';
+        try {
+            console.log('🔍 MCP: Attempting to fetch design guidelines...');
+            const guidelines = await mcpClient.fetchPlatformGuidelines(platform);
+            if (guidelines) {
+                mcpDesignContext = `\n\nDesign Guidelines Context (from ${platform}):\n${guidelines.substring(0, 800)}...\n`;
+                console.log('✅ MCP: Successfully fetched design context');
+            }
+        } catch (error) {
+            console.log('⚠️  MCP: Could not fetch guidelines, continuing without MCP context');
+        }
+
         // Create a detailed prompt for banner generation
         const prompt = `Create a professional, eye-catching retail banner image for "${name}".
 
@@ -36,7 +51,7 @@ Product Details:
 - Name: ${name}
 - Platform: ${platform}
 - Features: ${features ? features.join(', ') : 'Premium quality product'}
-- Banner Size: ${bannerSize}
+- Banner Size: ${bannerSize}${mcpDesignContext}
 
 Design Requirements:
 - Modern, clean, and professional design
@@ -49,6 +64,7 @@ Design Requirements:
 
 Generate a high-quality banner image that would work well for e-commerce advertising.
 Stay true to the user's product description - don't make up information or hallucinate features not mentioned.`;
+
 
         console.log('🚀 Attempting image generation...');
         console.log('Model: gemini-2.5-flash-image');

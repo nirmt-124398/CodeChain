@@ -6,6 +6,7 @@ AI-powered retail creative automation using Google Gemini. Generate SEO-optimize
 
 - **AI Text Generation** - Product descriptions via Gemini 2.5 Flash
 - **AI Image Generation** - Product banners via Gemini Imagen
+- **MCP Integration** - Real-time platform guidelines via Model Context Protocol
 - **Platform Validation** - Amazon, Flipkart, Meta specs
 - **Asset Management** - Preview and download generated creatives
 
