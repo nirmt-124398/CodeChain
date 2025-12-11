@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import AppHeader from '../components/AppHeader';
 import PageWrapper from '../components/PageWrapper';
 import Card from '../components/Card';
@@ -32,29 +33,35 @@ export default function Home() {
       <AppHeader />
 
       {/* Hero Section */}
-      <section style={{
-        background: 'linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-500) 100%)',
-        color: 'white',
-        padding: 'var(--spacing-2xl) var(--spacing-lg)',
-        textAlign: 'center'
-      }}>
+      <section
+        style={{
+          background: 'linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-500) 100%)',
+          color: 'white',
+          padding: 'var(--spacing-2xl) var(--spacing-lg)',
+          textAlign: 'center'
+        }}
+      >
         <PageWrapper>
           <div className="fade-in">
-            <h1 style={{
-              fontSize: '3rem',
-              fontWeight: '700',
-              marginBottom: 'var(--spacing-md)',
-              color: 'white'
-            }}>
+            <h1
+              style={{
+                fontSize: '3rem',
+                fontWeight: '700',
+                marginBottom: 'var(--spacing-md)',
+                color: 'white'
+              }}
+            >
               CodeChain — AI Creative Studio for Retail
             </h1>
-            <p style={{
-              fontSize: '1.25rem',
-              marginBottom: 'var(--spacing-xl)',
-              opacity: '0.95',
-              maxWidth: '700px',
-              margin: '0 auto var(--spacing-xl)'
-            }}>
+            <p
+              style={{
+                fontSize: '1.25rem',
+                marginBottom: 'var(--spacing-xl)',
+                opacity: '0.95',
+                maxWidth: '700px',
+                margin: '0 auto var(--spacing-xl)'
+              }}
+            >
               Generate banners & product descriptions instantly using Google Gemini.
               Automate your retail creatives in seconds.
             </p>
@@ -83,14 +90,15 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-lg">
             {features.map((feature, index) => (
-              <Card key={index} className="slide-in" style={{
-                animationDelay: `${index * 0.1}s`,
-                textAlign: 'center'
-              }}>
-                <div style={{
-                  fontSize: '3rem',
-                  marginBottom: 'var(--spacing-md)'
-                }}>
+              <Card
+                key={index}
+                className="slide-in"
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                  textAlign: 'center'
+                }}
+              >
+                <div style={{ fontSize: '3rem', marginBottom: 'var(--spacing-md)' }}>
                   {feature.icon}
                 </div>
                 <h3 className="card-title">{feature.title}</h3>
@@ -101,21 +109,27 @@ export default function Home() {
         </section>
 
         {/* Architecture Section */}
-        <section style={{
-          marginTop: 'var(--spacing-2xl)',
-          marginBottom: 'var(--spacing-2xl)'
-        }}>
+        <section
+          style={{
+            marginTop: 'var(--spacing-2xl)',
+            marginBottom: 'var(--spacing-2xl)'
+          }}
+        >
           <h2 className="text-center" style={{ marginBottom: 'var(--spacing-xl)' }}>
             How It Works
           </h2>
 
-          <Card hover={false} style={{
-            background: 'linear-gradient(to bottom, #f9fafb, white)',
-            padding: 'var(--spacing-xl)'
-          }}>
-            <div className="flex items-center justify-center gap-md" style={{
-              flexWrap: 'wrap'
-            }}>
+          <Card
+            hover={false}
+            style={{
+              background: 'linear-gradient(to bottom, #f9fafb, white)',
+              padding: 'var(--spacing-xl)'
+            }}
+          >
+            <div
+              className="flex items-center justify-center gap-md"
+              style={{ flexWrap: 'wrap' }}
+            >
               <ArchitectureStep number="1" label="Product Input" />
               <Arrow />
               <ArchitectureStep number="2" label="MCP Integration" />
@@ -127,12 +141,14 @@ export default function Home() {
               <ArchitectureStep number="5" label="Output" />
             </div>
 
-            <p style={{
-              textAlign: 'center',
-              marginTop: 'var(--spacing-xl)',
-              color: 'var(--color-text-body)',
-              marginBottom: 0
-            }}>
+            <p
+              style={{
+                textAlign: 'center',
+                marginTop: 'var(--spacing-xl)',
+                color: 'var(--color-text-body)',
+                marginBottom: 0
+              }}
+            >
               Seamless integration from input to validated, platform-ready creatives
             </p>
           </Card>
@@ -140,15 +156,28 @@ export default function Home() {
       </PageWrapper>
 
       {/* Footer */}
-      <footer style={{
-        background: 'var(--color-text-heading)',
-        color: 'white',
-        padding: 'var(--spacing-lg)',
-        textAlign: 'center',
-        marginTop: 'auto'
-      }}>
+      <footer
+        style={{
+          background: 'var(--color-text-heading)',
+          color: 'white',
+          padding: 'var(--spacing-lg)',
+          textAlign: 'center',
+          marginTop: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }}
+      >
+        <Image
+          src="/tenso_logo.png"
+          alt="Tesco Retail Media InnovAItion Jam"
+          width={120}
+          height={40}
+          style={{ marginBottom: 'var(--spacing-sm)' }}
+        />
         <p style={{ margin: 0, opacity: 0.8 }}>
-          Built for Hackathon 2024 | Powered by Google Gemini
+          Built for Hackathon - Tesco Retail Media InnovAItion Jam | Powered by
+          HackerEarth | Team CodeChain
         </p>
       </footer>
     </div>
