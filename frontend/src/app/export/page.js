@@ -6,6 +6,7 @@ import AppHeader from '../../components/AppHeader';
 import PageWrapper from '../../components/PageWrapper';
 import Card from '../../components/Card';
 import PrimaryButton from '../../components/PrimaryButton';
+import apiClient from '../../utils/apiClient';
 
 export default function ExportPage() {
     const router = useRouter();
@@ -33,8 +34,8 @@ export default function ExportPage() {
 
     const handleDownloadBanner = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/uploads/${generationData.bannerPath}`);
-            const blob = await response.blob();
+            const response = await apiClient.get(`/uploads/${generationData.bannerPath}`, { responseType: 'blob' });
+            const blob = response.data;
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;

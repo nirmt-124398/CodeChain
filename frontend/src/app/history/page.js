@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import AppHeader from '../../components/AppHeader';
 import PageWrapper from '../../components/PageWrapper';
 import Card from '../../components/Card';
+import apiClient, { API_BASE_URL } from '../../utils/apiClient';
 
 export default function History() {
     const [products, setProducts] = useState([]);
@@ -18,8 +19,8 @@ export default function History() {
     const fetchHistory = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:5000/history');
-            const data = await response.json();
+            const response = await apiClient.get('/history');
+            const data = response.data;
 
             if (data.success) {
                 setProducts(data.products);
@@ -36,7 +37,7 @@ export default function History() {
 
     const downloadFile = (filepath, filename) => {
         const link = document.createElement('a');
-        link.href = `http://localhost:5000${filepath}`;
+        link.href = `${API_BASE_URL}${filepath}`;
         link.download = filename;
         document.body.appendChild(link);
         link.click();
@@ -111,7 +112,7 @@ export default function History() {
                                         overflow: 'hidden'
                                     }}>
                                         <img
-                                            src={`http://localhost:5000${product.files.banner.path}`}
+                                            src={`${API_BASE_URL}${product.files.banner.path}`}
                                             alt={product.name}
                                             style={{
                                                 width: '100%',

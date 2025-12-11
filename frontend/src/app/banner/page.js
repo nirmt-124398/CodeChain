@@ -7,6 +7,7 @@ import PageWrapper from '../../components/PageWrapper';
 import Card from '../../components/Card';
 import PrimaryButton from '../../components/PrimaryButton';
 import SecondaryButton from '../../components/SecondaryButton';
+import apiClient, { API_BASE_URL } from '../../utils/apiClient';
 
 export default function BannerPage() {
     const router = useRouter();
@@ -30,8 +31,8 @@ export default function BannerPage() {
 
     const handleDownload = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/uploads/${generationData.bannerPath}`);
-            const blob = await response.blob();
+            const response = await apiClient.get(`/uploads/${generationData.bannerPath}`, { responseType: 'blob' });
+            const blob = response.data;
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
@@ -59,8 +60,8 @@ export default function BannerPage() {
             await new Promise(resolve => setTimeout(resolve, 300));
 
             // Download banner
-            const response = await fetch(`http://localhost:5000/uploads/${generationData.bannerPath}`);
-            const bannerBlob = await response.blob();
+            const response = await apiClient.get(`/uploads/${generationData.bannerPath}`, { responseType: 'blob' });
+            const bannerBlob = response.data;
             const bannerUrl = URL.createObjectURL(bannerBlob);
             const bannerLink = document.createElement('a');
             bannerLink.href = bannerUrl;
@@ -126,7 +127,7 @@ export default function BannerPage() {
                                 overflow: 'hidden'
                             }}>
                                 <img
-                                    src={`http://localhost:5000/uploads/${generationData.bannerPath}`}
+                                    src={`${API_BASE_URL}/uploads/${generationData.bannerPath}`}
                                     alt="Generated Banner"
                                     style={{
                                         maxWidth: '100%',
