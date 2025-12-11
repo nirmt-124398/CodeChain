@@ -69,8 +69,13 @@ Return ONLY the description text, properly formatted with natural line breaks.`;
         console.log('Response length:', description.length, 'characters');
         console.log('='.repeat(80));
 
+        const uploadDir = path.join(__dirname, '../uploads');
+        if (!fs.existsSync(uploadDir)) {
+            fs.mkdirSync(uploadDir, { recursive: true });
+        }
+
         const fileName = `${name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_${Date.now()}.txt`;
-        const filePath = path.join(__dirname, '../uploads', fileName);
+        const filePath = path.join(uploadDir, fileName);
 
         fs.writeFileSync(filePath, description);
 
